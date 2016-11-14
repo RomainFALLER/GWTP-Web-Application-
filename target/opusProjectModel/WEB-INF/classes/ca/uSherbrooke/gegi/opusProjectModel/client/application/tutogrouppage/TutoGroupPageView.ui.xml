@@ -1,0 +1,26 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:g="urn:import:com.google.gwt.user.client.ui"
+             xmlns:b="urn:import:org.gwtbootstrap3.client.ui">
+
+    <ui:style field="tutoGroupPageCss" src='TutoGroupPageCss.css' type="ca.uSherbrooke.gegi.opusProjectModel.client.application.tutogrouppage.TutoGroupPageView.TutoGroupPageCss" />
+
+    <g:HTMLPanel>
+        <b:NavTabs ui:field="appSelectTabs"/>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <b:TabContent>
+                    <b:TabPane active="true" ui:field="labelArea">
+                        <b:Heading ui:field="appName" size="H1" styleName='{tutoGroupPageCss.labelTitle}'/>
+                    </b:TabPane>
+                    <b:TabPane active="true" ui:field="tabContent"/>
+                </b:TabContent>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 ">
+                <b:Button styleName='{tutoGroupPageCss.button}' ui:field="btnHome"> Menu principal </b:Button>
+            </div>
+        </div>
+    </g:HTMLPanel>
+</ui:UiBinder>

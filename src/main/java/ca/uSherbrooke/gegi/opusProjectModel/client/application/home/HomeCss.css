@@ -1,0 +1,31 @@
+
+
+.button {
+    background-color:  #118755;
+    border: none;
+    color: white;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+    width: 450px;
+    height: 150px;
+}
+
+.vertical-center {
+     min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+     min-height: 100vh; /* These two lines are counted as one :-)       */
+
+     display: flex;
+     align-items: center;
+
+    width: 100%;
+    text-align: center;
+}
+
+.horizontal-center {
+    width: 100%;
+    text-align: center;
+}
+

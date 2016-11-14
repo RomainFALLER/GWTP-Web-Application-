@@ -1,0 +1,57 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:g="urn:import:com.google.gwt.user.client.ui"
+             xmlns:b="urn:import:org.gwtbootstrap3.client.ui">
+
+    <ui:style field="tutoPrefCss" src='TutoPrefCss.css' type="ca.uSherbrooke.gegi.opusProjectModel.client.application.tutoprefpage.TutoPrefPageView.TutoPrefCss" />
+
+    <g:HTMLPanel ui:field="main">
+        <b:NavTabs ui:field="appSelectTabs"/>
+
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <b:TabContent>
+                    <b:TabPane active="true" ui:field="labelArea" styleName='{tutoPrefCss.labelArea}'>
+                        <b:Heading ui:field="appName" size="H1" styleName='{tutoPrefCss.labelTitle}'/>
+                        <b:Heading ui:field="dateLabel" size="H2" styleName='{tutoPrefCss.labelDate} {tutoPrefCss.align-right}'/>
+                        <b:Heading ui:field="lockLabel" size="H2" />
+                        <b:Heading ui:field="timeOutLabel" size="H2" styleName='{tutoPrefCss.labelDateTimeOut}'/>
+
+                    </b:TabPane>
+                    <b:TabPane active="true" ui:field="prefGrid">
+                    </b:TabPane>
+                </b:TabContent>
+            </div>
+        </div>
+
+        <b:Row>
+            <b:Column size="4" styleName ="{tutoPrefCss.col-centered}">
+
+            </b:Column>
+            <b:Column size="4" styleName='{tutoPrefCss.col-centered} ' >
+
+            </b:Column>
+        </b:Row>
+
+        <div class="row">
+            <div class="col-md-6">
+                <b:Button styleName='{tutoPrefCss.button}' ui:field="btnHome"> Menu principal </b:Button>
+            </div>
+            <div class="col-md-6 text-right">
+                <div class="row">
+                    <div class="col-md-6 text-center">
+                        <b:Heading size="H3" ui:field="labelConfirmSave"/>
+                    </div>
+                    <div class="col-md-6 text-left">
+                        <b:Button styleName='{tutoPrefCss.button} {tutoPrefCss.glyphicon-floppy-disk}' ui:field="btnSave"> Sauvegarde </b:Button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </g:HTMLPanel>
+</ui:UiBinder>
+
+

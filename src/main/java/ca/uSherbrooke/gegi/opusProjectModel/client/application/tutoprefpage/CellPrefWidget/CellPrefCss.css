@@ -1,0 +1,26 @@
+.glyphiconTime:after {
+    color: white;
+    content:"\e023";
+    margin-left: 10px;
+    font-family: "Glyphicons Halflings";
+}
+
+.rowStyleGreen{
+    background-color: #ADD8C3;
+    color: black;
+}
+
+.rowStyleWhite{
+    background-color: White;
+    color: black;
+}
+
+.fontSize {
+    background-color:  #118755;
+    font-size: 18px;
+    color: white;
+}
+
+table td {
+    font-size: 16px;
+}

@@ -1,0 +1,39 @@
+.titleProf {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.teacherFlowPanel {
+    margin-bottom: 30px;
+}
+
+.saveButtonEnable {
+    background-color: #118755;
+    border: none;
+    color: white;
+    padding: 15px 52px;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.glyphicon-floppy-disk:before {
+    color: #333333;
+    content:"\e172";
+    font-size: 24px;
+    padding: 0px 10px;
+    font-family: "Glyphicons Halflings";
+}
+
+.saveButtonDisable{
+    background-color: #F0F8FF;
+    border: none;
+    color: dimgray;
+    padding: 15px 32px;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: center;
+}

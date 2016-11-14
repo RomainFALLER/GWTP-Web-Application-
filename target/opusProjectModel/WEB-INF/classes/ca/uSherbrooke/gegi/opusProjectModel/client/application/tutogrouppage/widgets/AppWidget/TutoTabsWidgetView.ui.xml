@@ -1,0 +1,27 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'
+             xmlns:b="urn:import:org.gwtbootstrap3.client.ui">
+
+    <ui:style field="tutoTabsCss" src='TutoTabsCss.css' type="ca.uSherbrooke.gegi.opusProjectModel.client.application.tutogrouppage.widgets.AppWidget.TutoTabsWidgetView.TutoTabsCss" />
+
+    <g:HTMLPanel ui:field="panel">
+        <b:Label ui:field="teachersHeading" text="Tuteurs" styleName='{tutoTabsCss.titleProf}'/>
+        <g:Grid ui:field="teachersLabelsGrid"/>
+        <b:NavTabs ui:field="tutoSelectTabs"/>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <b:TabContent>
+                    <b:TabPane active="true" ui:field="tutoTabContentPanel"/>
+                </b:TabContent>
+            </div>
+        </div>
+        <g:HorizontalPanel width="100%">
+            <g:cell width="100%" >
+                <b:Heading size="H3" text="La sauvegarde a été effectué avec succès" ui:field="saveConfirmLabel" visible="false"/>
+            </g:cell>
+            <g:cell width="100%" horizontalAlignment="ALIGN_RIGHT">
+                <b:Button enabled="false" styleName='{tutoTabsCss.saveButtonDisable} {tutoTabsCss.glyphicon-floppy-disk}' ui:field="saveButton"> Sauvegarde   </b:Button>
+            </g:cell>
+        </g:HorizontalPanel>
+    </g:HTMLPanel>
+</ui:UiBinder>
